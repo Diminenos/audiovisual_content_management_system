@@ -1,0 +1,57 @@
+/*
+Theme Name: OceanWP Child Theme
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme. Sample child theme.
+Author: OceanWP
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+/* Style for the "Show Content" button */
+#show-content-button {
+    padding: 10px;
+    background-color: #17A8E3; /* background color */
+    color: #fff; /* Customize the text color */
+    cursor: pointer;
+}
+
+/* Style for the actual content container */
+#actual-content {
+    margin-top: 20px; /* Add some spacing between the button and content */
+    font-size: 16px; /* Customize the font size */
+    line-height: 1.6; /* Customize the line height */
+}
+
+/* Optional: Add transition effect for smoother visibility toggling */
+#actual-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+#waveform {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#playPauseButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+#playPauseButton:hover {
+    background-color: #005177;
+}
