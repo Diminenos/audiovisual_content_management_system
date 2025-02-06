@@ -1,0 +1,6 @@
+{
+    "name": "user/connect_rabbitmq_with_wordpress",
+    "description": "Send messages to rabbitmq",
+    "type": "wordpress-plugin",
+    "require": {"php-amqplib/php-amqplib": "^3.0"}
+}
