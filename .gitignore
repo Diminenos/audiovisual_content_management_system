@@ -1,0 +1,7 @@
+# Ignore all .env files
+*.env
+
+# Ignore a specific directory (example: logs)
+wordpress_files/custom_plugins/vendor/
+
+
