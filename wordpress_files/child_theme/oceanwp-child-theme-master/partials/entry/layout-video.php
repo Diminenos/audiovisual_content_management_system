@@ -51,7 +51,7 @@ if ( 'thumbnail-entry' === $style ) {
 			// Loop through elements.
 			foreach ( $elements as $element ) {
 				
-				// Featured Image.
+			
 				// Featured Image.
 				if ( 'featured_image' === $element ) {
 

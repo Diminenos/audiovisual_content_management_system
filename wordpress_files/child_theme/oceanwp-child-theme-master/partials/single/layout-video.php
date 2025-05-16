@@ -27,14 +27,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$srt_file_path_gr = $path_info['dirname'] . '/' . $path_info['filename'] . '_el.vtt';
 		$srt_file_path_en = $path_info['dirname'] . '/' . $path_info['filename'] . '_en.vtt';
 
-		// Load JSON data from the file path
+		
 		$json_file_path = $path_info['dirname'] . '/' . $path_info['filename'] . '.json'; // Adjust this as necessary
 		$json_data = json_decode(file_get_contents($json_file_path), true);
 	
 
 		// Extract FPS if it's included in the JSON
 		$fps = isset($json_data['fps']) ? (float) $json_data['fps'] : 30; // Fallback to 30 if not available
-		unset($json_data['fps']); // Remove FPS from JSON
+		unset($json_data['fps']); 
 
 		?>
 		<style>
@@ -81,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			.audio-controls {
 				display: flex;
 				justify-content: center;
-				margin-bottom: 15px; /* Adds spacing between button and waveform */
+				margin-bottom: 15px; 
 			}
 
 			#playPauseButton {
@@ -89,7 +89,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				height: 60px;
 				border: none;
 				border-radius: 50%;
-				background-color: #005177; /* Dark Blue */
+				background-color: #005177; 
 				cursor: pointer;
 				outline: none;
 				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -101,7 +101,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			}
 
 			#playPauseButton:hover {
-				background-color: #0073aa; /* Medium Blue */
+				background-color: #0073aa; 
 			}
 
 			#playPauseButton.play-button::before {
@@ -138,8 +138,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			#waveform {
 				border: 1px solid #ddd;
 				border-radius: 5px;
-				background-color: #eaf4fc; /* Light Blue Background */
-				margin: 0 auto; /* Center waveform */
+				background-color: #eaf4fc; 
+				margin: 0 auto; 
 			}
 		</style>
 
@@ -165,8 +165,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     document.addEventListener('DOMContentLoaded', function () {
         const waveform = WaveSurfer.create({
             container: '#waveform',
-            waveColor: '#4a90e2', // Light Blue for the waveform
-            progressColor: '#005177', // Dark Blue for progress
+            waveColor: '#4a90e2', 
+            progressColor: '#005177', 
             height: 100,
             responsive: true,
             backend: 'mediaelement'
@@ -181,7 +181,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             waveform.playPause();
             isPlaying = !isPlaying;
 
-            // Toggle button class for play/pause
+            
             playPauseButton.classList.toggle('play-button', !isPlaying);
             playPauseButton.classList.toggle('pause-button', isPlaying);
         });

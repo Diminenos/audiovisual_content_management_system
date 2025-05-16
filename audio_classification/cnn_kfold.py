@@ -51,7 +51,7 @@ class CustomDataset(Dataset):
         return len(self.features)
 
     def __getitem__(self, index):
-        features = self.features[index].unsqueeze(0)  # Add a channel dimension
+        features = self.features[index].unsqueeze(0)  
         labels = self.labels[index]
         return features, labels
 

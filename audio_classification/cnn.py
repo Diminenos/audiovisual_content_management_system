@@ -27,7 +27,7 @@ class AudioCNN(nn.Module):
 
             nn.Conv2d(32, 64, kernel_size=(3, 3), padding=(1, 1)),
             nn.ReLU(),
-            nn.AdaptiveAvgPool2d((1, 10))  # Adjusted to prevent zero-size error
+            nn.AdaptiveAvgPool2d((1, 10))  # Prevents zero-size error
         )
 
         

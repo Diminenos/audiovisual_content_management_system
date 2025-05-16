@@ -7,10 +7,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+#Generate wavelet-based spectrogram function
 def process_audio_wavelet(signal,sr, wavelet='db4', level=6, block_size=512):
-    """
-    generate wavelet-based spectrogram function
-    """
+   
     
     signal = signal / np.max(np.abs(signal))
     n_blocks = len(signal) // block_size
@@ -48,7 +47,7 @@ features = []
 
 # Load the audio data
 audio_signal, sample_rate = librosa.load(audio_path, sr=22500)
-if len(audio_signal.shape) == 2:  # Stereo audio
+if len(audio_signal.shape) == 2:  
     audio_signal = audio_signal.mean(axis=1)
 segment_duration = 3 # seconds
 overlap = 0.5 # 50% overlap
@@ -110,7 +109,7 @@ class AudioCNN(nn.Module):
         x = self.fc_layers(x)
         return x
 
-features_tensor = features_tensor.unsqueeze(1)  # Adds a new dimension at index 1 (channels)
+features_tensor = features_tensor.unsqueeze(1)  
 
 print(features_tensor.shape)
 

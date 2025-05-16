@@ -17,7 +17,6 @@ $post_type = get_post_type();
 
 
 // Display the bookmark button
-//echo do_shortcode('[oacsspl]');
 ?>
 
 <div class="post-tags clr">
