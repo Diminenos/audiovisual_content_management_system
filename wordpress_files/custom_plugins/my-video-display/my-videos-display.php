@@ -21,4 +21,3 @@ function filter_posts_by_author( $query ) {
 add_action('powerpack/query/custom','filter_posts_by_author',10,2 );
 
 
-//,

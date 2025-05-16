@@ -30,7 +30,7 @@ function get_path($form_id, $response) {
 
                 // Check if post ID and file path are available
                 if ($stored_post_id && $upload_file_path) {
-                    // Check file type (video or audio)
+                    
                     $mime_type = mime_content_type($upload_file_path);
 
                     if (strpos($mime_type, 'video') !== false) {

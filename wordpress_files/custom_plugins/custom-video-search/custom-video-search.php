@@ -4,7 +4,6 @@
  * Description: A plugin to add custom video search functionality.
  */
 
-// Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
