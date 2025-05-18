@@ -20,7 +20,7 @@ The system was built from scratch in a virtual machine hosted by Aristotle Unive
 ### deployment/
 – Systemd service files to run components on boot
 
-### 🔗 wordpress_integration/
+### wordpress_integration/
 - Creates a custom plugin that works as a message producer.
 - Producer sends a json file with an id and file path to the consumer
 
