@@ -1,7 +1,7 @@
 # Frontend – Aristotle TV (WordPress)
 
 This folder contains **only the frontend components that i develop** for Aristotle TV.
-It consists of a **custom plugin suite** and a **child theme** used to display enriched media posts with ML-generated results.
+It consists of **custom plugins** and a **child theme** used to display enriched media posts with ML-generated results.
 
 ---
 
