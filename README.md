@@ -20,10 +20,10 @@ The system processes and enhances audiovisual content using machine learning and
   Transcribes spoken audio into text and subtitles.
 
 - **Named Entity Recognition (NER)**  
-  Extracts topics/entities from subtitles for semantic search.
+  Extracts topics/entities from text for semantic search.
 
 - **Asynchronous Processing**  
-  Tasks are processed in the background using Celery and RabbitMQ.
+  Tasks (Algorithms) are processed in the background using Celery and RabbitMQ.
 
 - **WordPress Integration**  
   WordPress plugin + theme for enhanced video playback with tags, topics, and subtitles.
@@ -33,11 +33,11 @@ The system processes and enhances audiovisual content using machine learning and
 ## Tech Stack
 
 ### Backend
-- Python 3.10+, Celery, RabbitMQ
+- Python, Celery, RabbitMQ
 - ffmpeg, pydub
 - Whisper (OpenAI)
 - MMAction2 (from OpenMMLab)
-- spaCy or Hugging Face (NER)
+- spaCy (NER)
 
 ### Frontend
 - WordPress (Custom Plugin + Child Theme)
@@ -50,7 +50,7 @@ The system processes and enhances audiovisual content using machine learning and
 
 This system was deployed on a Linux server running:
 
-- Python 3.10
+- Python
 - Celery workers
 - RabbitMQ (as system service)
 - PHP + WordPress
@@ -78,5 +78,4 @@ This project is for academic use.
 Inspired by tools from:
 - OpenAI (Whisper)
 - OpenMMLab (MMAction2)
-- Hugging Face
 - spaCy
