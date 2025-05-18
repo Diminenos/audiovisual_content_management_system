@@ -1,0 +1,86 @@
+{% extends 'ArUTv/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+{% block content %}
+
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <form method="post" class="form-horizontal" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <strong>Upload Video</strong>
+                                        </div>
+                                        <div class="card-body card-block">
+                                            <div class="row form-group">
+                                                <div class="col-12 col-md-9">
+                                                    {{ form.video }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <strong>Video Details</strong>
+                                        </div>
+                                        <div class="card-body card-block">
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-title" class=" form-control-label">Title</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    {{ form.title }}
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-description"
+                                                           class=" form-control-label">Description</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    {{ form.description }}
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-category"
+                                                           class=" form-control-label">Category</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    {{ form.categories }}
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="hf-tags" class=" form-control-label">Tags</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    {{ form.tags }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="submit" class="au-btn au-btn-icon au-btn--blue">
+                                                Submit
+                                            </button>
+                                            <button type="reset" class="au-btn au-btn-icon btn-danger">
+                                                Reset
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+{% endblock %}
