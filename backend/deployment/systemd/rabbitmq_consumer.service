@@ -1,0 +1,14 @@
+[Unit]
+Description=RabbitMQ Consumer to send tasks to celery for running algorithms
+After=network.target
+
+[Service]
+User=dimineno
+Group=dimineno                   
+WorkingDirectory=/home/dimineno/consumer_celery  
+ExecStart=/home/dimineno/miniconda3/envs/arutvEnv/bin/python /home/dimineno/consumer_celery/consumer.py
+Restart=always
+RestartSec=5s  
+
+[Install]
+WantedBy=multi-user.target

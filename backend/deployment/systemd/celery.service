@@ -1,0 +1,13 @@
+[Unit]
+Description=Celery Worker for Video Processing
+After=network.target
+
+[Service]
+User=dimineno
+Group=dimineno
+WorkingDirectory=/home/dimineno/consumer_celery
+ExecStart=/home/dimineno/miniconda3/envs/arutvEnv/bin/celery -A celery_app worker --loglevel=info --logfile=/home/dimineno/consumer_celery/app.log 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
