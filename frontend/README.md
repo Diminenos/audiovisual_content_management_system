@@ -10,13 +10,13 @@ It consists of **custom plugins** and a **child theme** used to display enriched
 
 The plugin directory includes three custom WordPress plugins developed for enhanced media interaction:
 
-### 1. `user-files-display`
+### 1. `my-video-display`
 - Shows uploaded video/audio files for the currently logged-in user.
 
-### 2. `thumbnail-generator`
+### 2. `thumbnail-creator`
 - Automatically generates and displays thumbnails for each media file.
 
-### 3. `topic-search-form`
+### 3. `custom-video-search`
 - Adds a search interface for exploring content based on **topics** extracted by NER.
 - Users can select a topic and search for specific keywords inside video/audio speech.
 
