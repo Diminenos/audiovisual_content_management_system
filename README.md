@@ -1,6 +1,6 @@
-# Aristotle TV – Audiovisual Content Management System 🎓
+# Aristotle TV – Audiovisual Content Management System 
 
-This is my undergraduate thesis project at Aristotle University.  
+This is my thesis project at Aristotle University.  
 The system processes and enhances audiovisual content using machine learning and natural language processing.
 
 
