@@ -79,3 +79,11 @@ Inspired by tools from:
 - OpenAI (Whisper)
 - OpenMMLab (MMAction2)
 - spaCy
+
+## Alternate Architecture (Django First Attempt)
+
+Before switching to WordPress, this system was initially prototyped in Django.
+
+- Located in: `/django_first_try/`
+- Demonstrates user authentication, media upload, and early backend logic
+- Dropped in favor of WordPress to ensure usability of the system for both technical and non-technical users
